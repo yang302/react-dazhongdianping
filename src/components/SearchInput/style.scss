@@ -1,0 +1,20 @@
+.searchContainer {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+    i {
+        color: #ccc;
+        margin-left: 2px;
+        vertical-align: top;
+    }
+    input {
+        vertical-align: top;
+        font-size: 14px;
+        color: #000;
+        border: 0;
+        width: 175px;
+        margin-left: 5px;
+    }
+}

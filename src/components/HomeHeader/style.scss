@@ -1,0 +1,24 @@
+.homeHeader {
+    background-color: rgb(233, 32, 61);
+    padding: 10px 0 10px 10px;
+    a {
+        display: inline-block;
+        width: 100%;
+    }
+    * {
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+.homeHeaderLeft {
+    width: 60px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.homeHeaderRight {
+    width: 30px;
+    margin: 5px 0;
+    text-align: center;
+}

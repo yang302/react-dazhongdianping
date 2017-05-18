@@ -1,0 +1,43 @@
+.userInfoFace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 251, 239);
+    height: 200px;
+    position: relative;
+    .face {
+        position: relative;
+        top: -10px;
+        background: url('./images/face.jpg') no-repeat center center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-size: 100px 100px;
+    }
+    .userInfoAction {
+        span {
+            background-color: #e9203d;
+            border-radius: 5px;
+            padding: 2px 5px;
+            color: #fff;
+            &:nth-child(2) {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.userActionList {
+    margin-top: 15px;
+    background-color: #fff;
+    li {
+        padding: 15px;
+        a {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    }
+}

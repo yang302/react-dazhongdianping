@@ -1,0 +1,80 @@
+{
+    "name": "react-project",
+    "version": "1.0.0",
+    "description": "A React project",
+    "main": "src/main.js",
+    "keywords": [
+        "express",
+        "webpack",
+        "node",
+        "spa"
+    ],
+    "author": "yangqingfeng",
+    "license": "MIT",
+    "scripts": {
+        "dev": "node build/dev-server",
+        "build": "node build/build.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^6.7.7",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.4.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-1": "^6.24.1",
+        "chalk": "^1.1.3",
+        "connect-history-api-fallback": "^1.3.0",
+        "copy-webpack-plugin": "^4.0.1",
+        "css-loader": "^0.28.0",
+        "es6-promise": "^4.1.0",
+        "eventsource-polyfill": "^0.9.6",
+        "express": "^4.15.2",
+        "extract-text-webpack-plugin": "^2.1.0",
+        "file-loader": "^0.11.1",
+        "friendly-errors-webpack-plugin": "^1.3.1",
+        "function-bind": "^1.1.0",
+        "html-webpack-plugin": "^2.28.0",
+        "http-proxy-middleware": "^0.17.4",
+        "internal-ip": "^1.2.0",
+        "koa": "^1.2.2",
+        "koa-router": "^5.4.0",
+        "node-sass": "^4.5.2",
+        "opn": "^4.0.2",
+        "ora": "^1.1.0",
+        "postcss-loader": "^1.3.3",
+        "react-addons-pure-render-mixin": "^15.5.2",
+        "react-hot-loader": "^3.0.0-beta.6",
+        "sass-loader": "^6.0.4",
+        "semver": "^5.3.0",
+        "shelljs": "^0.7.6",
+        "style-loader": "^0.16.1",
+        "url-loader": "^0.5.8",
+        "webpack": "^2.4.1",
+        "webpack-bundle-analyzer": "^2.3.0",
+        "webpack-dev-middleware": "^1.10.2",
+        "webpack-hot-middleware": "^2.17.0",
+        "webpack-merge": "^4.1.0",
+        "whatwg-fetch": "^2.0.3"
+    },
+    "dependencies": {
+        "bundle-loader": "^0.5.5",
+        "fastclick": "^1.0.6",
+        "prismjs": "^1.6.0",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4",
+        "react-redux": "^5.0.4",
+        "react-router-dom": "^4.1.1",
+        "react-swipe": "^5.0.8",
+        "redux": "^3.6.0"
+    },
+    "engines": {
+        "node": ">= 4.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

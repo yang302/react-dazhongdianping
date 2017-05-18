@@ -1,0 +1,19 @@
+.commonHeader {
+    background-color: rgb(233, 32, 61);
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    position: relative;
+    h1 {
+        display: inline;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: normal;
+    }
+    .back-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+    }
+}
