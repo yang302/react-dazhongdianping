@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -9,12 +8,9 @@ import Header from 'components/Header';
 import Info from './subpage/Info';
 import Comment from './subpage/Comment';
 
-class Detail extends Component {
+class Detail extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   componentDidMount() {

@@ -1,15 +1,11 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import Item from './Item';
 import './style.scss';
 
-class HomeList extends Component {
+class HomeList extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   render() {

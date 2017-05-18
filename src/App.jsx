@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
@@ -70,12 +69,9 @@ const NotFound = (props) => (
   </Bundle>
 );
 
-class App extends Component {
+class App extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       initDone: false

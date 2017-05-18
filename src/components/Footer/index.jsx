@@ -1,17 +1,13 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 
 import './style.scss';
 
-class Footer extends Component {
+class Footer extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   render() {

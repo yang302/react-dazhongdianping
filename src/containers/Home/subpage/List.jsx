@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import HomeList from 'components/List';
 import LoadMore from 'components/LoadMore';
@@ -8,12 +7,9 @@ import {getListData} from '../../../../fetch/home/home';
 
 import './style.scss';
 
-class List extends Component {
+class List extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       hasMore: false,

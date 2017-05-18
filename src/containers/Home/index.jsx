@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -10,12 +9,9 @@ import Category from 'components/Category';
 import Ad from './subpage/Ad';
 import List from './subpage/List';
 
-class Home extends Component {
+class Home extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   componentDidMount() {

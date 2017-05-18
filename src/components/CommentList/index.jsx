@@ -1,14 +1,12 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 import Item from './Item';
 
 import './style.scss';
 
-class CommentList extends React.Component {
+class CommentList extends React.PureComponent {
     constructor(props) {
         super(props);
-        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
         // 获取数据

@@ -1,14 +1,12 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 import Star from '../../Star';
 
 import './style.scss';
 
-class Item extends React.Component {
+class Item extends React.PureComponent {
     constructor(props) {
         super(props);
-        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
         // 获取数据

@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import Prism from 'prismjs';
 import StyleData from './centerData';
 import './center.scss';
 
-class Center extends Component {
+class Center extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   componentDidMount() {

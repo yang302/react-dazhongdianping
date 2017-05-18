@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -11,12 +10,9 @@ import Animate from './subpage/animate';
 
 import './style.scss';
 
-class CSS extends Component {
+class CSS extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       type: '',

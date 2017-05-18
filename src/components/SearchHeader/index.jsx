@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import SearchInput from 'components/SearchInput';
 import './style.scss';
 
-class SearchHeader extends Component {
+class SearchHeader extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   clickHandle() {

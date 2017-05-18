@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -12,12 +11,9 @@ import CityList from 'components/CityList';
 import {CITYNAME} from '../../../static/js/localStorekey';
 import LocalStore from '../../../static/js/localStore';
 
-class City extends Component {
+class City extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   changeCity(newCity) {

@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as appActions from '$redux/actions/app';
 
-class NotFound extends Component {
+class NotFound extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
   }
 
   componentDidMount() {

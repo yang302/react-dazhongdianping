@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import CommentList from 'components/CommentList';
 import LoadMore from 'components/LoadMore';
@@ -9,12 +8,9 @@ import commentData from '../../../../mock/detail/comment';
 
 import './style.scss';
 
-class Comment extends Component {
+class Comment extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       data: [],

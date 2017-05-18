@@ -1,17 +1,13 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import DetailInfo from 'components/DetailInfo';
 
 import {getDetail} from '../../../../fetch/detail/detail';
 import InfoData from '../../../../mock/detail/info';
 
-class Info extends Component {
+class Info extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       info: ''

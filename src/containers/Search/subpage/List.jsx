@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 import {connect} from 'react-redux';
@@ -18,12 +18,9 @@ const initialState = {
   page: 0
 };
 
-class SearchList extends Component {
+class SearchList extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = initialState;
   }

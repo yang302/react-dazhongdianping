@@ -1,18 +1,14 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {Link} from 'react-router-dom';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 import SearchInput from '../SearchInput';
 
 import './style.scss';
 
-class HomeHeader extends Component {
+class HomeHeader extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       keyword: ''

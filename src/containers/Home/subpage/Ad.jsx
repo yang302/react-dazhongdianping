@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, {PureComponent} from 'react';
 
 import HomeAd from 'components//HomeAd';
 import AdData from '../../../../mock/home/ad';
 import {getAdData} from '../../../../fetch/home/home';
 
-class Ad extends Component {
+class Ad extends PureComponent {
   constructor(props) {
     super(props);
-    this.shouldComponentUpdate = PureRenderMixin
-      .shouldComponentUpdate
-      .bind(this);
 
     this.state = {
       data: []
